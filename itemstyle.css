@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: url(noise.png);
+    /* background-color: rgb(253, 255, 132); */
+}
+
+header {
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+}
+
+.title {
+    display: inline-flex;
+}
+
+h1 {
+    text-align: right;
+    color: rgb(18, 86, 233);
+}
+
+.title #logo {
+    height: 90px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    color: rgb(18, 86, 233);
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.nav-bar a:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+@media screen and (max-width: 361px) {
+    .title {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .title #logo {
+        height: 45px;
+        margin-right: 40px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    .nav-bar a {
+        margin-bottom: 10px;
+        line-height: 17px;
+    }
+}
+
+.content {
+    display: inline-block;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1px;
+    right: 50px;
+    top: 179px;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+#sidebar #info {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 180px;
+    padding: 10px;
+    margin-top: 50px;
+    border-right: 10px solid black;
+    border-bottom: 1px solid black;
+    text-align: right;
+    color: rgb(18, 86, 233);
+}
+
+#info p {
+    font-size: 16px;
+    color: black;
+}
+
+.content #schedule {
+    width: 440px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    z-index: 1px;
+    left: 50px;
+    top: 205px;
+    padding-top: 20px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    color: rgb(18, 86, 233);
+    margin-left: -20px;
+    margin-top: 50px;
+}
+
+#schedule img {
+    margin-top: 20px;
+    width: 420px;
+    height: 900px;
+    display: block;
+    position: absolute;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 361px) {
+    .content {
+        text-align: center;
+    }
+
+    .content #schedule {
+        height: 70px;
+        width: 300px;
+        margin-top: 0px;
+        font-size: 12px;
+        overflow: scroll;
+    }
+}
+
+#myvideo {
+    display: inline-block;
+    border: 1px solid black;
+    width: 75%;
+    height: 390px;
+    margin-top: 50px;
+    margin-right: -100px;
+    background: rgb(0, 0, 0);
+}
+
+#featurep {
+    font-size: 20px;
+    margin-right: -14px;
+    width: 550px;
+}
+
+#radio {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 361px) {
+    #myvideo {
+        width: 50%;
+        height: 20vh;
+        margin-top: 100px;
+        margin-right: 10px;
+    }
+
+    #featurep {
+        font-size: 12px;
+        width: 100vw;
+        margin-right: 0px;
+    }
+}
+
+table {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+}
+
+table tr {
+    margin-bottom: 20px;
+}
+
+table td {
+    width: 200px;
+    height: 150px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+table td:nth-of-type(n) {
+    padding-right: 50px;
+}
+
+table td a:hover {
+    cursor: pointer;
+}
+
+table img {
+    width: 200px;
+    height: 127px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 361px) {
+    table, td, tr {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    td {
+        display: inline-table;
+        padding-right: 20px;
+    }
+
+    table img {
+        width: 100px;
+        height: 63px;
+    }
+
+    table p {
+        width: 300px;
+    }
+}
+
+#end {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 361px) {
+    #end {
+        text-align: right;
+        font-size: 10px;
+}
