@@ -157,19 +157,22 @@ h1 {
 }
 
 #myvideo {
-    display: inline-block;
+    float: right;
+    
     border: 1px solid black;
-    width: 75%;
+    width: 700px;
     height: 390px;
     margin-top: 50px;
-    margin-right: -100px;
+    margin-right: -50px;
+    margin-bottom: 40px;
     background: rgb(0, 0, 0);
 }
 
 #featurep {
     font-size: 20px;
-    margin-right: -14px;
-    width: 550px;
+    margin-right: 20px;
+    width: 100px;
+    padding: 20px;
 }
 
 #radio {
@@ -181,7 +184,8 @@ h1 {
         width: 50%;
         height: 20vh;
         margin-top: 100px;
-        margin-right: 10px;
+        margin-right: 100px;
+        margin-bottom: 10px;
     }
 
     #featurep {
@@ -255,4 +259,5 @@ table img {
     #end {
         text-align: right;
         font-size: 10px;
+    }
 }
